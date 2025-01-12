@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CAN Bus Visualizer</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    <header>
+        <h1>CAN Bus Visualizer</h1>
+    </header>
+    <main>
+        <section id="upload">
+            <h2>Upload Your Files</h2>
+            <form id="uploadForm">
+                <label for="dbcFile">DBC File:</label>
+                <input type="file" id="dbcFile" name="dbc" accept=".dbc" required>
+                <label for="traceFile">Trace File:</label>
+                <input type="file" id="traceFile" name="trace" accept=".blf,.asc,.trc" required>
+                <button type="submit">Process Files</button>
+            </form>
+        </section>
+        <section id="results">
+            <h2>Decoded Signals</h2>
+            <div id="resultsContainer">No data yet.</div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2025 CAN Bus Visualizer</p>
+    </footer>
+    <script src="/static/script.js"></script>
+</body>
+</html>
